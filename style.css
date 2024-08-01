@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    width: 1728px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 51px 64px;
+}
+
+.header{
+    font-size: 40px;
+    color: rgba(29, 41, 63, 1);
+    font-weight: 700;
+    line-height: 46.88px;
+    letter-spacing: -0.6399999856948853px;
+    text-align: left;
+    width: 293px;
+    height: 47px;
+    margin-bottom: 29px;
+    /* margin: 51px 1371px 29px 64px; */
+}
+
+.article{
+    font-size: 24px;
+    color: rgba(84, 97, 121, 1);
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.3799999952316284px;
+    text-align: left;
+    width: 620px;
+    height: 36px;
+    margin-bottom: 64px;
+}
+
+.catalog{
+    display: grid;
+    grid-template-columns: 376px 512px 240px 376px;
+    grid-template-rows: repeat(2, 335px);
+    gap: 32px;
+    justify-content: center;
+}
+
+.catalog_item{
+    display: flex;
+    align-items: flex-end;
+}
+
+.catalog_item-link{
+    display: block;
+}
+
+.catalog_item-img{
+    display: grid;
+    width: 100%;
+}
+
+.catalog_item-info{
+    display: grid;
+    margin-bottom: 37px;
+    margin-left: 32px;
+    color: white;
+}
+
+.catalog_item-headline{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.3799999952316284px;
+    text-align: left;
+}
+
+.catalog_item-p{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    letter-spacing: 0.5px;
+    text-align: left;
+
+}
+
+.Vietnam{
+    background: url('Vietnam.png');
+    width: auto;
+    background-size: cover;
+}
+
+.Greece{
+    grid-row: span 2;
+    background: url('Greece.png');
+    width: auto;
+    background-size: cover;
+}
+
+.London{
+    grid-column: 3 / span 2;
+    background: url('London.png');
+    width: auto;
+    background-size: cover;
+}
+
+.Old_Rain{
+    background: url('Old Rain.png');
+    width: auto;
+    background-size: cover;
+}
+
+.Amsterdam{
+    background: url('Amsterdam.png');
+    width: auto;
+    background-size: cover;
+}
+
+.Paris{
+    background: url('Paris.png');
+    width: auto;
+    background-size: cover;
+}
+
+@media (max-width: 1049px) {
+    body{
+        width: 100%;
+    }
+    .header{
+        width: 381.15px;
+        height: 46.16px;    
+        margin-bottom: 20px;
+    }
+    .article{
+        width: 806.53px;
+        height: 35.36px;
+        margin-bottom: 42.48px;
+    }
+    .catalog{
+        display: grid;
+        /* grid-template-columns: 512px 377px; */
+        grid-template-columns: 295px 185px 377px;
+        grid-template-rows: 254px 254px 413.03px 340px;
+    }
+    .catalog_item{
+        border-radius: 30px;
+    }
+    .catalog_item-info{
+        margin-bottom: 30px;
+        margin-left: 32px;
+    .Greece{
+        grid-row: 1 / span 2;
+        grid-column: 1 / span 2;
+    }
+    .Paris{
+        order: 1;
+    }
+    .Vietnam{
+        order: 2;
+    }
+    .London{
+        grid-column: 1 / span 3;
+        order: 3;
+    }
+    .Amsterdam{
+        /* max-width: 295px; */
+        order: 4;
+    }
+    .Old_Rain{
+        /* width: 594px; */
+        grid-column: 2 / span 2;
+        order: 5;
+    }
+}
+
+@media (max-width: 475px) {
+    body{
+        width: 100%;
+    }
+    .container{
+        margin: 51px 25px; 
+    }
+    .header{
+        width: 425px;
+        height: 47.04px;
+        margin-bottom: 15.01;
+    }
+    .article{
+        width: 425px;
+        height: 72.46px;
+        margin-bottom: 29.85px;
+    }
+    .catalog{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+    .catalog_item{
+        width: 425px;
+        height: 254px;
+        border-radius: 30px;
+    }
+    .catalog_item-info{
+        margin-bottom: 30px;
+        margin-left: 32px;
+    .Amsterdam{
+        min-width: 425px;
+        background: url('Amsterdam_1.png');
+        width: 100%;
+        background-size: cover;
+    }
+}
