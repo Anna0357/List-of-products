@@ -7,6 +7,7 @@ body{
     margin: 0;
     padding: 0;
     width: 1728px;
+    background-color: firebrick;
 }
 
 h1{
@@ -75,21 +76,27 @@ a{
 }
 
 .catalog_item{
-    display: flex;
+    display: flex; 
     align-items: flex-end;
 }
 
 .catalog_item-link{
     display: block;
+    position: relative;
 }
 
 .catalog_item-img{
     display: grid;
     width: 100%;
+    /* position: relative; */
 }
 
 .catalog_item-info{
     display: grid;
+    position: absolute;
+    z-index: 1;
+    justify-items: start;
+    align-items: end;
     margin-bottom: 37px;
     margin-left: 32px;
     color: white;
@@ -113,42 +120,16 @@ a{
 
 }
 
-.Vietnam{
-    background: url('Vietnam.png');
-    width: auto;
-    background-size: cover;
-}
-
 .Greece{
     grid-row: span 2;
-    background: url('Greece.png');
-    width: auto;
-    background-size: cover;
+    /* background: url('Greece.png'); */
+    width: 100%;
 }
 
 .London{
     grid-column: 3 / span 2;
-    background: url('London.png');
-    width: auto;
-    background-size: cover;
-}
-
-.Old_Rain{
-    background: url('Old Rain.png');
-    width: auto;
-    background-size: cover;
-}
-
-.Amsterdam{
-    background: url('Amsterdam.png');
-    width: auto;
-    background-size: cover;
-}
-
-.Paris{
-    background: url('Paris.png');
-    width: auto;
-    background-size: cover;
+    /* background: url('London.png'); */
+    width: 100%;
 }
 
 @media (max-width: 1049px) {
